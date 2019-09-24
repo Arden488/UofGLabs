@@ -20,21 +20,21 @@ public class Lab3Ex1 {
         System.out.println("Radius: " + radius + "\n" + "Area: " + area + "\n" + "Circumference: " + circumference);
     }
 
-    public static String scopeTest(String message) {
+    public static void scopeTest(String message) {
         message += " ";
         message += "is actually long";
-        return message;
+        System.out.println(message);
     }
 
     public static void main(String[] args) {
+        // First exercise
         double radius = 5.6;
-
         summariseCircle(radius);
 
+        // Second exercise
         String message = "This string...";
-        String newMessage = scopeTest(message);
 
         System.out.println(message);
-        System.out.println(newMessage);
+        scopeTest(message);
     }
 }
