@@ -12,12 +12,14 @@ public class Lab6Ex2 {
     }
 
     public static void main(String[] args) {
-        int max = 12;
+        int max = 100;
         int counter = 1;
 
         do {
             counter++;
-            System.out.println("Prime status for " + counter + " is: " + isNumberPrime(counter));
+            if (isNumberPrime(counter)) {
+                System.out.println(counter);
+            }
         } while (counter < max);
     }
 }
